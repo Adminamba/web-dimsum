@@ -1,0 +1,74 @@
+:root {
+    --rufous: #ab2a02;
+    --caramel: #fadc9a;
+    --arylide-yellow: #f2d275;
+    --UOC-gold: #c08429;
+    --army-green: #3e5526;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+/* Template Body */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9f9;
+  color: #333333;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.navbar .navbar-nav  {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+div.judul {
+    display: flex;
+    align-items: center;
+}
+
+
+div.head {
+    white-space: nowrap;
+    padding: 0 10rem;
+}
+
+nav.navbar-nav {
+    background-color: var(--rufous);
+    display: flex;
+    
+}
+
+ul.unlist {
+    width: 100%;
+    display: flex;
+    flex-direction:row;
+    gap: 2rem;
+    justify-content: flex-end;
+    padding-right: 10rem;
+}
+
+ul li a {
+    color: white;
+}
+
+
+img.circle-avatar {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 1rem;
+}
+
+
+
