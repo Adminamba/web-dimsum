@@ -1,38 +1,174 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rico Ganteng aja</title>
-    <link rel="stylesheet" href="/css/style.css">
-</head>
-<body>
-    <!-- navbar section -->
-     <section class="navbar">
-        <nav class="navbar-nav">
-            <div class="judul">
-                
-                <img src="img/logo.jpg" alt="Logo dimsum" class="circle-avatar">
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DimsumQu | Tasty & Bitsy</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="navbar">
+      <nav class="navbar-nav" aria-label="Navigasi utama">
+        <a class="judul" href="#home" aria-label="DimsumQu beranda">
+          <img src="img/logo.jpg" alt="Logo DimsumQu" class="circle-avatar" />
+          <span>DimsumQu</span>
+        </a>
 
-                <h2>DimsumQu</h2>
+        <div class="head">
+          <span class="eyebrow">EST. 2024 / BANDUNG</span>
+          <h1>Tasty <i>&amp;</i> Bitsy</h1>
+        </div>
+
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-label="Buka menu"
+          aria-expanded="false"
+        >
+          <span></span><span></span><span></span>
+        </button>
+
+        <ul class="unlist">
+          <li><a class="active" href="#home">Home</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#story">Our story</a></li>
+          <li>
+            <a class="nav-order" href="#menu">Pesan sekarang <span>↗</span></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="home">
+      <section class="hero section-shell">
+        <div class="hero-copy">
+          <p class="kicker">
+            Papan rasa hari ini <span class="live-dot"></span>
+          </p>
+          <h2>Small bites,<br /><em>big mood.</em></h2>
+          <p class="hero-description">
+            Dimsum hangat yang dibuat untuk menemani jeda, cerita, dan meja yang
+            selalu ingin tambah satu lagi.
+          </p>
+          <a class="primary-button" href="#menu"
+            >Jelajahi menu!! <s>↓</span></a
+          >
+        </div>
+        <div class="hero-note" aria-label="Informasi jam buka">
+          <span class="note-line"></span>
+          <p>Fresh from<br />the steamer</p>
+          <strong>11:00—22:00</strong>
+        </div>
+      </section>
+
+      <section class="board section-shell" id="menu">
+        <div class="section-heading">
+          <div>
+            <p class="kicker">Pick your happy</p>
+            <h2>Menu <em>kami!</em></h2>
+          </div>
+          <p class="board-hint">
+            Arahkan kursor ke kartu<br />untuk melihat detail
+          </p>
+        </div>
+
+        <div class="filter-bar" role="group" aria-label="Filter menu">
+          <button class="filter active" type="button" data-filter="all">
+            Semua <span>04</span>
+          </button>
+          <button class="filter" type="button" data-filter="steamed">
+            Steamed <span>02</span>
+          </button>
+          <button class="filter" type="button" data-filter="fried">
+            Crispy <span>01</span>
+          </button>
+          <button class="filter" type="button" data-filter="sweet">
+            Sweet <span>01</span>
+          </button>
+        </div>
+
+        <div class="menu-grid">
+          <article class="menu-card featured" data-category="steamed">
+            <div class="card-number">01 / CHEF'S PICK</div>
+            <div class="food-icon food-bao" aria-hidden="true">bao</div>
+            <div class="card-info">
+              <h3>Truffle Xiao Long Bao</h3>
+              <p>Juicy · warm · earthy</p>
+              <strong>Rp 32K</strong>
             </div>
-
-            <div class="head">
-                <h1>
-                    Tasty & Bitsy
-                </h1>
+            <button
+              class="add-button"
+              type="button"
+              aria-label="Tambah Truffle Xiao Long Bao"
+            >
+              +
+            </button>
+          </article>
+          <article class="menu-card" data-category="fried">
+            <div class="card-number">02 / CROUNCH</div>
+            <div class="food-icon food-gyoza" aria-hidden="true">gyoza</div>
+            <div class="card-info">
+              <h3>Chili Oil Gyoza</h3>
+              <p>Crispy · spicy · bold</p>
+              <strong>Rp 28K</strong>
             </div>
+            <button
+              class="add-button"
+              type="button"
+              aria-label="Tambah Chili Oil Gyoza"
+            >
+              +
+            </button>
+          </article>
+          <article class="menu-card" data-category="steamed">
+            <div class="card-number">03 / SOFT SPOT</div>
+            <div class="food-icon food-siu" aria-hidden="true">siu mai</div>
+            <div class="card-info">
+              <h3>Golden Siumai</h3>
+              <p>Silky · savory · classic</p>
+              <strong>Rp 25K</strong>
             </div>
+            <button
+              class="add-button"
+              type="button"
+              aria-label="Tambah Golden Siumai"
+            >
+              +
+            </button>
+          </article>
+          <article class="menu-card" data-category="sweet">
+            <div class="card-number">04 / LITTLE JOY</div>
+            <div class="food-icon food-mochi" aria-hidden="true">mochi</div>
+            <div class="card-info">
+              <h3>Mango Mochi</h3>
+              <p>Chill · fruity · soft</p>
+              <strong>Rp 22K</strong>
+            </div>
+            <button
+              class="add-button"
+              type="button"
+              aria-label="Tambah Mango Mochi"
+            >
+              +
+            </button>
+          </article>
+        </div>
+      </section>
 
-            <ul class="unlist">
-                <li><a href="#">Home</a></li> 
-                <li><a href="#">Menu</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
+      <section class="story section-shell" id="story">
+        <p class="kicker">Made to share</p>
+        <h2>One more?<br /><em>Always.</em></h2>
+        <div class="story-stat">
+          <strong>04</strong><span>signature<br />bites</span>
+        </div>
+      </section>
+    </main>
 
-
-        </nav>
-     </section>
-</body>
+    <div class="toast" role="status" aria-live="polite">
+      Ditambahkan ke pesanan <span>✓</span>
+    </div>
+    <script src="js/script.js" type="module"></script>
+      
+    </script>
+  </body>
 </html>
